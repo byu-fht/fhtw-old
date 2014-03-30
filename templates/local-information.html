@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container">
+<div class="col-md-6">
+
+{% filter markdown %}
+
+## Location
+
+
+    770 East University Parkway
+    Provo, Utah 84602 
+    (801) 422-7700
+
+The Conference Center is located one block east of the Marriott Center
+and just east of the new BYU Broadcasting Building.
+
+## Driving Directions
+
+*I-15 Southbound to BYU Conference Center*
+
+* Head south on I-15 S toward Provo
+
+* Take exit 269 toward University Parkway
+
+* Keep left at the fork (leads to University Parkway)
+
+* Follow University Parkway about 4.3 miles - The Conference Center
+will be on your right.
+
+*I-15 Northbound to BYU Conference Center*
+
+* Head north on I-15 N toward Provo
+
+* Take exit 263 toward University Ave.
+
+* Follow University Ave. about 3.3 miles
+
+* Turn right onto University Parkway
+
+* Follow University Parkway about 0.7 miles - The Conference Center
+will be on your right.
+
+## Parking
+
+Free parking is in the lot west of the BYU Conference Center.
+
+## Food
+
+A light breakfast, lunch, and snacks will be provided for attendees of
+the workshop.
+
+{% endfilter %}
+
+</div>
+
+<div class="col-md-6">
+
+{% filter markdown %}
+![directions](static/img/directions.png)
+{% endfilter %}
+
+</div>
+
+</div>
+
+{% endblock %}
+
