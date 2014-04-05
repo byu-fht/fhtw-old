@@ -290,3 +290,8 @@ img[alt=directions] {
 .center {
     text-align: center;
 }
+
+button a, button a:hover, button a:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
