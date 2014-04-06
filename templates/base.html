@@ -7,42 +7,34 @@
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link href="/static/css/app.css" rel="stylesheet">
   </head>
   <body>
     {% block header %}
-    <div class="container-fluid">
-      <div class="row">
-	<div class="col-xs-12 col-med-12 col-lg-4 brand">
-	  <a href="/"><img class="logo" src="/static/img/logo.png"></a>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="/"><img src="/static/img/favicon.png"></a>
 	</div>
-	<div class="col-xs-12 col-med-12 col-lg-8">
-	  <nav class="navbar navbar-default" role="navigation">
-	    <div class="container-fluid">
-	      <div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		  <span class="sr-only">Toggle navigation</span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		</button>
-	      </div>
-	      <div class="collapse navbar-collapse">
-		<ul class="nav nav-pills">
-		  <li {% if active == "index" %}class="active"{% endif %}><a href={{url_for("index")}}>Home</a></li>
-		  <li {% if active == "call-for-papers" %}class="active"{% endif %}><a href={{url_for("show",directory="call-for-papers")}} >Call for Papers</a></li>
-		  <li {% if active == "local-information" %}class="active"{% endif %}><a href={{url_for("show",directory="local-information")}} >Local Information</a></li>
-		  <li {% if active == "program" %}class="active"{% endif %}><a href={{ url_for("show",directory="program")}} >Program</a></li>
-		  <li {% if active == "archive" %}class="active"{% endif %}><a href={{ url_for("show",directory="archive")}} >Archive</a></li>
-		  <li id="menu-registration"><a href="https://cereg.byu.edu/o2/index.cfm?event=public.login&redirect=/o2/index.cfm?event=reg.init&product_id=10078461">Registration</a></li>
-		</ul>
-	      </div>
-	    </div>
+	<div id="navbar-collapse" class="collapse navbar-collapse">
+	  <ul class="nav navbar-nav">
+	    <li {% if active == "index" %}class="active"{% endif %}><a href={{url_for("index")}}>Home</a></li>
+	    <li {% if active == "call-for-papers" %}class="active"{% endif %}><a href={{url_for("show",directory="call-for-papers")}} >Call for Papers</a></li>
+	    <li {% if active == "local-information" %}class="active"{% endif %}><a href={{url_for("show",directory="local-information")}} >Local Information</a></li>
+	    <li {% if active == "program" %}class="active"{% endif %}><a href={{ url_for("show",directory="program")}} >Program</a></li>
+	    <li {% if active == "archive" %}class="active"{% endif %}><a href={{ url_for("show",directory="archive")}} >Archive</a></li>
+	    <li id="menu-registration"><a href="https://cereg.byu.edu/o2/index.cfm?event=public.login&redirect=/o2/index.cfm?event=reg.init&product_id=10078461">Registration</a></li>
+	  </ul>
 	</div>
-      </div>
-    </div>
+    </nav>
     {% endblock %}
 
     <div id="page">
@@ -59,6 +51,8 @@ ga('create', 'UA-38419970-2', 'byu.edu');
 ga('send', 'pageview');
 
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
   </body>
 </html>
