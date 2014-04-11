@@ -20,8 +20,8 @@ Create a virtual environment:
 
 ```
 mkdir ~/virtualenvs
-virtualenv ~/virtualenvs/listomatic
-source ~/virtualenvs/listomatic/bin/activate
+virtualenv ~/virtualenvs/fhtw
+source ~/virtualenvs/fhtw/bin/activate
 ```
 
 Install Python requirements:
