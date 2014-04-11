@@ -1,5 +1,4 @@
-Family History Technology Workshop
-==================================
+# Family History Technology Workshop
 
 These are the web pages used by the BYU Open Source Lab. They are
 built using:
@@ -7,6 +6,31 @@ built using:
 - [Flask](http://flask.pocoo.org/)
 - [Frozen-Flask](http://pythonhosted.org/Frozen-Flask/)
 - [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
+
+## Installation
+
+First install a few things through apt:
+
+```
+sudo apt-get install python-pip
+sudo pip install virtualenv
+```
+
+Create a virtual environment:
+
+```
+mkdir ~/virtualenvs
+virtualenv ~/virtualenvs/listomatic
+source ~/virtualenvs/listomatic/bin/activate
+```
+
+Install Python requirements:
+
+```
+pip install -r requirements.txt
+```
+
+## Creating web pages
 
 Use
 
@@ -18,8 +42,7 @@ to start a local server with the web pages, and
 
 to build a static set of pages you can place on any web server.
 
-Copyright
----------
+## Copyright
 
 The authors of papers and presentations shared on this web site own the
 copyright. You may print or copy them for personal, non-commercial use.
