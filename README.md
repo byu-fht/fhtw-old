@@ -36,11 +36,24 @@ Use
 
 > python app.py
 
-to start a local server with the web pages, and
+to start a local server with the web pages,
 
 > python app.py build
 
-to build a static set of pages you can place on any web server.
+to build a static set of pages you can place on any web server, and
+
+> doit
+
+to rsync the pages to a server. This requires setting up a dodo.py file,
+using the [Doit automation tool](http://pydoit.org/). For example:
+
+```
+def task_install():
+    """install """
+    return {
+        'actions': ['python app.py build','cp htaccess build/.htaccess','rsync -rav --delete build/* username@fhtw.byu.edu:/var/www/fhtw.byu.edu'],
+        }
+```
 
 ## Copyright
 
@@ -55,7 +68,3 @@ Copyright (c) 2013 BYU Family History Technology
 Released under the <a
 href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative
 Commons Attribution-ShareAlike 3.0 Unported License</a>.
-
-
-
-
