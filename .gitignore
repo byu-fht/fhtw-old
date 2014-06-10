@@ -3,3 +3,4 @@
 build
 *.ppt
 *.pptx
+.doit.db

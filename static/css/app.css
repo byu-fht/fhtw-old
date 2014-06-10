@@ -104,10 +104,20 @@ body {
     width: 100%;
 }
 
+.about-banner {
+    color: #eee;
+    background: #aaa;
+    padding: 20px 0 0px;
+}
+
 .footer-banner {
     color: #eee;
     background: #e4e4e4;
     padding: 20px 0;
+}
+
+.program {
+    padding-bottom: 20px;
 }
 
 /* Page */
