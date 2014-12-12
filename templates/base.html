@@ -32,6 +32,7 @@
 	    <li {% if active == "program" %}class="active"{% endif %}><a href={{ url_for("show",directory="program")}} >Program</a></li>
 	    <li {% if active == "archive" %}class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive <b class="caret"></b></a>
 	      <ul class="dropdown-menu">
+		<li><a href={{url_for("show",directory="archive",page="2014")}}>2014</a></li>
 		<li><a href={{url_for("show",directory="archive",page="2013")}}>2013</a></li>
 		<li><a href={{url_for("show",directory="archive",page="2012")}}>2012</a></li>
 		<li><a href={{url_for("show",directory="archive",page="2011")}}>2011</a></li>
