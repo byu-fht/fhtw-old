@@ -236,6 +236,17 @@ img[alt=directions] {
     text-align: center;
 }
 
+.sidebar {
+    float: left;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.clear {
+    clear: both;
+    height: 20px;
+}
+
 button a, button a:hover, button a:focus{
     color: #ffffff;
     text-decoration: none;
