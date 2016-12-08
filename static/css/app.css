@@ -219,6 +219,14 @@ pre code {
     margin-bottom: 10px;
 }
 
+.blue-box {
+    background: #264C8A;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
 .black-box {
     background: #333;
     padding: 10px;
