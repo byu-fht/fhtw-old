@@ -31,9 +31,10 @@
 	    <li {% if active == "index" %}class="active"{% endif %}><a href={{url_for("index")}}>Home</a></li>
 	    <li {% if active == "call-for-papers" %}class="active"{% endif %}><a href={{url_for("show",directory="call-for-papers")}} >Call for Papers</a></li>
 	    <li {% if active == "local-information" %}class="active"{% endif %}><a href={{url_for("show",directory="local-information")}} >Local Information</a></li>
-	    <li {% if active == "program" %}class="active"{% endif %}><a href={{ url_for("show",directory="program")}} >Program</a></li>
+	    <li {% if active == "program" %}class="active"{% endif %}><a href={{ url_for("show",directory="coming")}} >Program</a></li>
 	    <li {% if active == "archive" %}class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive <b class="caret"></b></a>
 	      <ul class="dropdown-menu">
+		<li><a href={{url_for("show",directory="archive",page="2017")}}>2017</a></li>
 		<li><a href={{url_for("show",directory="archive",page="2016")}}>2016</a></li>
 		<li><a href={{url_for("show",directory="archive",page="2015")}}>2015</a></li>
 		<li><a href={{url_for("show",directory="archive",page="2014")}}>2014</a></li>
