@@ -1,0 +1,1 @@
+	    <li id="menu-registration"><a href="http://cereg.byu.edu/o3/user/registration/initialize/product_id/10091177/enrollLocation/user">Registration</a></li>
